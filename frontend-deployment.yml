@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: backend-deployment
+ name: frontend-deployment
 spec:
  selector:
    matchLabels:
@@ -13,7 +13,7 @@ spec:
        type: frontend
    spec:
     containers:
-    - name: backend
+    - name: frontend
       image: cloudcamp2022/frontend:latest
       envFrom:
       ports:
