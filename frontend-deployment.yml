@@ -6,6 +6,7 @@ spec:
  selector:
    matchLabels:
     type: frontend
+    app: frontend
  replicas: 2
  template:
    metadata:
